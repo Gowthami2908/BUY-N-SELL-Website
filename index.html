@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy and Sell</title>
+    <style>
+        body{
+    background-image: url("https://www.shutterstock.com/image-illustration/buy-sell-gold-stock-market-600nw-2394746603.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.container{
+    display:inline-block;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    width:100%;
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.7);
+    width:800px;
+    height: 400px;
+    margin:auto;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button{
+    background-color: rgb(224, 156, 72);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+.nav{
+    width: 100%;
+    height:70px;
+    padding:35px 0;
+    margin: auto;
+    align-items:end;
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  width: 100%;
+}
+.nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin:-15px 20px;
+    position:relative;
+    margin-right:40px;
+}
+.nav ul li a{
+    text-decoration: solid;
+    text-shadow:black;
+    font-size: 22px;
+    font-family: Segoe Script;
+    font-weight:bolder;
+    color:rgb(224, 156, 72);
+    text-transform: uppercase;
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background-color:rgb(255, 255, 255);
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    transition:0.5s;
+}
+.nav ul li:hover::after{
+    width:100%;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 style="font-size: 70px;color: rgb(224, 156, 72);font-family: Segoe Script;margin-bottom: -25px;margin-left: 20px">Buy N Sell</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.jsp">Buy</a></li>
+            <li><a href="sell.jsp">Sell</a></li>
+            <li><a href="cart.jsp">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </div>
+        <div class="box">
+            <h1 style="font-family: Segoe Script;font-size:50px;">Welcome to Buy N Sell !</h1>
+            <p style="font-size: 25px;">Buy N Sell is a platform where you can put up products for sale-SELL and BUY existing products from here.</p>
+            <p style="font-size: 25px;">What are you still waiting for? Sign Up now!</p>
+            <a class="button" href="signup.html" type="submit">Sign Up</a>
+            <p style="font-size: 20px;text-align: center;">Already have an account?  <a style="font-size: 20px;text-align: center;color: blue;" href="signin.html" >Sign in</a>
+        </div>
+</body>
+</html>

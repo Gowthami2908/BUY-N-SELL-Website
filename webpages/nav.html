@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .nav{
+    width: 100%;
+    height:30px;
+    padding:35px 0;
+    margin: auto;
+    align-items:end;
+    display:flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, rgb(224, 156, 72), rgb(224, 156, 72));
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+}
+.nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin:-15px 15px;
+    position:relative;
+    margin-right:40px;
+}
+.nav ul li a{
+    text-decoration: solid;
+    text-shadow:black;
+    font-size: 22px;
+    font-family: Segoe Script;
+    font-weight:bolder;
+    color:black;
+    text-transform: uppercase;
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background-color:rgb(255, 255, 255);
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    transition:0.5s;
+}
+.nav ul li:hover::after{
+    width:100%;
+}
+.nav ul{
+    margin-top:50px;
+    margin-right:80px;
+}
+</style>
+</head>
+    <body>
+        <div class="nav">
+        <h1 style="font-size: 40px;color: black;font-family: Segoe Script;margin-bottom: -10px;margin-left:10px">Buy N Sell</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="buy.jsp">Buy</a></li>
+            <li><a href="sell.jsp">Sell</a></li>
+            <li><a href="cart.jsp">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
